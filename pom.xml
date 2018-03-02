@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.test.dynamicjasper.reports</groupId>
+	<artifactId>DynamicJasperReports</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>DynamicJasperReports Example</name>
+	<description>DynamicJasperReports Example</description>
+	<url>http://localhost:8080/</url>
+
+	<organization>
+		<name>DynamicJasperReports</name>
+		<url>http://www.DynamicJasperReports</url>
+	</organization>
+
+	<properties>
+		<main.basedir>${basedir}/../../..</main.basedir>
+	</properties> 
+
+	<dependencies>
+		
+		
+		<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+		<dependency>
+		    <groupId>net.sf.jasperreports</groupId>
+		    <artifactId>jasperreports</artifactId>
+		    <version>6.4.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/ar.com.fdvs/DynamicJasper -->
+		<dependency>
+		    <groupId>ar.com.fdvs</groupId>
+		    <artifactId>DynamicJasper</artifactId>
+		    <version>5.1.0</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.11</version>
+		</dependency>
+
+				
+		<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+		<dependency>
+		    <groupId>com.lowagie</groupId>
+		    <artifactId>itext</artifactId>
+		    <version>2.1.7</version>
+		</dependency>
+
+		
+		<!-- https://mvnrepository.com/artifact/org.olap4j/olap4j -->
+		<dependency>
+		    <groupId>org.olap4j</groupId>
+		    <artifactId>olap4j</artifactId>
+		    <version>1.2.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.dynamicreports/dynamicreports-core -->
+		<dependency>
+		    <groupId>net.sourceforge.dynamicreports</groupId>
+		    <artifactId>dynamicreports-core</artifactId>
+		    <version>5.0.0</version>
+		</dependency> 
+		
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>6.0.6</version>
+		</dependency>
+
+
+	</dependencies>
+	
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+
+				</configuration>
+			</plugin> 
+		 
+		</plugins>
+		
+		<finalName>DynamicJasperReports</finalName>
+		
+	</build>
+
+</project>

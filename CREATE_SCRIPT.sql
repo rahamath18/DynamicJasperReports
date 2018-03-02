@@ -1,0 +1,13 @@
+CREATE SCHEMA TEST;
+CREATE TABLE TEST.EMPLOYEE (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `NAME` varchar(255) NOT NULL,
+  `LOGIN_ID` varchar(255) NOT NULL,
+  `DEPARTMENT` varchar(50) NOT NULL,
+  `STATUS` varchar(15) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+
+INSERT INTO `test`.`employee`(`NAME`,`LOGIN_ID`,`DEPARTMENT`,`STATUS`) VALUES ('John Miller','jmiller','IT Dept','ACTIVE');
+INSERT INTO `test`.`employee`(`NAME`,`LOGIN_ID`,`DEPARTMENT`,`STATUS`) VALUES ('Smith Den','sden','HR Dept','ACTIVE');
+INSERT INTO `test`.`employee`(`NAME`,`LOGIN_ID`,`DEPARTMENT`,`STATUS`) VALUES ('Maryam Jons','MaryamR','Finance Dept','ACTIVE');
